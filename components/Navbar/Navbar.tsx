@@ -21,7 +21,11 @@ export function Navbar() {
               height={48}
               alt="NFT marketplace sample logo"
             />
-          </Link>
+            </Link>
+
+            <Link href="/">
+              Polygods
+            </Link>
 
           <div className={styles.navMiddle}>
             <Link href="/buy" className={styles.link}>
