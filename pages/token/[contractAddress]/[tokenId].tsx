@@ -356,20 +356,20 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const tokenId = context.params?.tokenId as string;
-
   const sdk = new ThirdwebSDK(NETWORK, {
     secretKey: process.env.TW_SECRET_KEY,
   });
-
   const contract = await sdk.getContract(NFT_COLLECTION_ADDRESS);
-
   const nft = await contract.erc721.get(tokenId);
-
   let contractMetadata;
-
   try {
     contractMetadata = await contract.metadata.get();
   } catch (e) {}
+
+  // Check if .nft.metadata.file_url is undefined and set it to null
+  if (nft?.metadata?.file_url === undefined) {
+    nft.metadata.file_url = null;
+  }
 
   return {
     props: {

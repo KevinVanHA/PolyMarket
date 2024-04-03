@@ -8,7 +8,7 @@ import styles from "../../styles/Buy.module.css";
 
 type Props = {
   isLoading: boolean;
-  data: NFTType[] | undefined;
+  data: NFTType[] | null | undefined;
   overrideOnclickBehavior?: (nft: NFTType) => void;
   emptyText?: string;
 };
