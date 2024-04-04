@@ -18,41 +18,28 @@ const Home: NextPage = () => {
                 src="/hero-gradient.png"
                 width={1390}
                 height={1390}
-                alt="Background gradient from red to blue"
+                alt="Hero Image"
                 quality={100}
                 className={styles.gradient}
               />
             </div>
           </div>
-          <div className={styles.heroAssetFrame}>
-            <Image
-              src="/hero-asset.png"
-              width={860}
-              height={540}
-              alt="Hero asset, NFT marketplace"
-              quality={100}
-              className={styles.heroAsset}
-            />
-          </div>
           <div className={styles.heroBodyContainer}>
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  Build NFT Marketplaces
+                  Polygods
                 </span>
-                <br />
-                faster than ever.
-              </h1>
+                </h1>
               <p className={styles.heroSubtitle}>
                 <Link
                   className={styles.link}
-                  href="https://thirdweb.com"
+                  href="https://polygods.com"
                   target="_blank"
                 >
-                  thirdweb
+                  Polygods <br />
                 </Link>{" "}
-                gives you the tools you need to create audited, performant, and
-                flexible NFT marketplaces in <b>hours</b>, <i>not months</i>.
+                Sell, buy, battle our custom NFT masterpieces for <b>profit</b> <br /><i>and enjoyment</i>.
               </p>
 
               <div className={styles.heroCtaContainer}>
@@ -61,10 +48,10 @@ const Home: NextPage = () => {
                 </Link>
                 <Link
                   className={styles.secondaryCta}
-                  href="https://github.com/thirdweb-example/marketplace-v3"
+                  href="#"
                   target="_blank"
                 >
-                  GitHub
+                  Discord
                 </Link>
               </div>
             </div>
